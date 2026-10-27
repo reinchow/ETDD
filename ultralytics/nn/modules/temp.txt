@@ -1,0 +1,17 @@
+
+\sum_{k=1}^K P_k = 1
+ e \to \infty
+$$e_{i,k} = \exp(l_{i,k})$$
+$$P_{i,k} = \frac{e_{i,k}}{e_{i,k} + 1} = \frac{\exp(l_{i,k})}{\exp(l_{i,k}) + 1} = \sigma(l_{i,k})$$
+$$\mathcal{L}_{BCE}^{(i,k)} = -\left[ y_{i,k} \log(P_{i,k}) + (1 - y_{i,k}) \log(1 - P_{i,k}) \right]$$
+$$p_{t,i,k} = y_{i,k} \cdot P_{i,k} + (1 - y_{i,k}) \cdot (1 - P_{i,k})$$$$\mathcal{F}_{factor}^{(i,k)} = (1 - p_{t,i,k})^\gamma$$
+ $p_t \to 1$，其 $\mathcal{F}_{factor} \to 0$ $\gamma$
+$W_{defect}=30.0$
+ $\mathbb{I}_{fg}^{(i)} \in \{0, 1\}$
+$\omega_{dynamic}$
+$$\omega_{dynamic}^{(i, k)} = \mathbb{I}_{fg}^{(i)} \cdot W_{k} + \left(1 - \mathbb{I}_{fg}^{(i)}\right) \cdot 1.0$$
+$\mathbb{I}_{fg}^{(i)}=1$
+$$\mathcal{L}_{DEL} = \sum_{i \in \text{Anchors}} \sum_{k=1}^K \omega_{dynamic}^{(i,k)} \cdot \mathcal{F}_{factor}^{(i,k)} \cdot \mathcal{L}_{BCE}^{(i,k)}$$
+$\mathcal{L}_{DEL}$
+$e_{i,k} = \exp(l_{i,k})$ 到 $P = \sigma(l)$
+$\mathbb{I}_{fg}$
