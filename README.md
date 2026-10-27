@@ -1,1 +1,2 @@
 The dataset consists of one main dataset and four additional multi-source datasets, denoted as Gen1–Gen4. The main dataset contains 4,200 images for training, validation, and testing. Gen1–Gen4 were collected from different production batches, FPC models, or AOI imaging conditions to evaluate framework robustness and repeatability across industrial data sources.
+All our data is published at https://huggingface.co/datasets/qy808yq/ETDD/tree/main. You can visit this link to access the complete dataset.
